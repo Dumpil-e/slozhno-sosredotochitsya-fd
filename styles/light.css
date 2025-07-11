@@ -13,16 +13,17 @@
   --bg-color: #F1B2CE;
   --title-color: #FFC2E6;
   --title-shadow-color: #FF8DCB;
-  --subtitle-bg-color: #FF8DCB; 
+  --subtitle-bg-color: #FF8DCB;
   --subtitle-text-color: #353430;
   --text-color: #353430;
   --nav-text-color: #353430;
   --nav-text-outline: 1px solid rgba(53, 52, 48, 0.5);
   --decorate-text-color: #353430;
+  --section-title-color: #353430;
+}
 
-  .header__rec {
-    display: none;
-  };  
+:root.theme-light .header__rec {
+  display: none;
 }
 
 .theme-light .page {
@@ -31,16 +32,17 @@
   --bg-color: #F1B2CE;
   --title-color: #FFC2E6;
   --title-shadow-color: #FF8DCB;
-  --subtitle-bg-color: #FF8DCB; 
+  --subtitle-bg-color: #FF8DCB;
   --subtitle-text-color: #353430;
   --text-color: #353430;
   --nav-text-color: #353430;
   --nav-text-outline: 1px solid rgba(53, 52, 48, 0.5);
   --decorate-text-color: #353430;
+  --section-title-color: #353430;
+}
 
-  .header__rec {
-    display: none;
-  };  
+.theme-light .page .header__rec {
+  display: none;
 }
 
 @media (prefers-color-scheme: light) {
@@ -49,14 +51,15 @@
     --bg-color: #F1B2CE;
     --title-color: #FFC2E6;
     --title-shadow-color: #FF8DCB;
-    --subtitle-bg-color: #FF8DCB; 
+    --subtitle-bg-color: #FF8DCB;
     --subtitle-text-color: #353430;
     --text-color: #353430;
     --nav-text-color: #353430;
     --nav-text-outline: 1px solid rgba(53, 52, 48, 0.5);
     --decorate-text-color: #353430;
+    --section-title-color: #353430;
 
-    .header__rec {
+  .header__rec {
       display: none;
     }
   }
