@@ -259,22 +259,38 @@
     margin-block: 60px;
   }
 
-  .main-content__section:nth-child(odd):not(.galery) {
+  .main-content__section {
     grid-template-columns: 236px auto;
-    grid-template-rows: min-content;
     column-gap: 20px;
   }
 
-  .main-content__section:nth-child(odd):not(.galery) .main-content__title {
+  .main-content__title {
     grid-column: 1;
   }
 
-  .main-content__section:nth-child(odd):not(.galery) .main-content__article {
+  .main-content__article {
     grid-column: 2;
   }
 
-  .main-content__section:nth-child(2n):not(.galery) .main-content__title {
-      width: 236px;
+  .distraction-list  {
+    grid-template-columns: none;
+    grid-auto-flow: row;
+  }
+
+  .distraction-list .main-content__title {
+    grid-column: auto;
+  }
+
+ .distraction-list .main-content__article {
+    grid-column: auto;
+  }
+
+  .distraction-list .main-content__title {
+    width: 236px;
+  }
+
+  .galery {
+    grid-template-columns: none;
   }
 
   .main-content__galery {
@@ -337,33 +353,31 @@
     padding-inline: 10px;
   }
 
-  .main-content__section:nth-child(odd):not(.galery) .main-content__title {
-    width: 315px;
-  }
-
-  .main-content__section:nth-child(odd):not(.galery) .main-content_title-decoration {
-    width: auto;
-  }
-
-  .main-content__section:nth-child(odd):not(.galery) {
+  .main-content__section {
     grid-template-columns: 315px auto;
     column-gap: 20px;
   }
 
-  .main-content__section:nth-child(2n):not(.galery) {
+  .main-content__title {
+    width: 315px;
+  }
+
+  .main-content_title-decoration {
+    width: auto;
+  }
+
+  .distraction-list {
     grid-template-columns: repeat(3, 1fr);
     column-gap: 20px;
   }
 
-  .main-content__section:nth-child(2n):not(.galery) .main-content__title {
+  .distraction-list .main-content__title {
     width: 315px;
     grid-column: 1 / -1;
   }
 
-  .main-content__section:nth-child(2n):not(.galery) .main-content__article {
-    display: flex;
-    flex-direction: column;
-    gap: 10;
+  .galery {
+    grid-template-columns: none;
   }
 
   .footer__title {
